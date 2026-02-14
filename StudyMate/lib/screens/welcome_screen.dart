@@ -34,17 +34,17 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              colors: [
-                Colors.blue.shade300,
-                Colors.green.shade200,
-              ],
-            ),
-          ),
+        // child: Container(
+        //   decoration: BoxDecoration(
+        //     gradient: LinearGradient(
+        //       begin: Alignment.topRight,
+        //       end: Alignment.bottomLeft,
+        //       colors: [
+        //         Colors.blue.shade300,
+        //         Colors.green.shade200,
+        //       ],
+        //     ),
+        //   ),
           child: Center(
             child: FadeTransition(
               opacity: _opacity!,
@@ -52,7 +52,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   const Text(
-                    'Welcome to Our App!',
+                    'Welcome to StudyMate!',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -76,20 +76,20 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
                         MaterialPageRoute(builder: (context) => const LoginScreen()),
                       );
                     },
-                    child: const Text('Get Started'),
+                    child: const Text('Login'),
                   ),
-                  // const SizedBox(height: 20),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     // Navigate to the sign up screen if you have one
-                  //   },
-                  //   child: const Text('Sign Up'),
-                  // ),
+                  const SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      // Navigate to the sign up screen
+                    },
+                    child: const Text('Sign Up'),
+                  ),
                 ],
               ),
             ),
           ),
-        ),
+        // ),
       ),
     );
   }
