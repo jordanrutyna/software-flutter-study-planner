@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import '/widgets/course_template_card.dart';
 import '/models/course_template.dart';
 
 // Placeholder for HouseDetailsRecord model

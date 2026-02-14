@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '/widgets/home_drawer.dart';
 import '/widgets/bottom_navigation_bar.dart';
-import '/widgets/feature_card.dart';
 // Add any additional imports for new widgets you create
 
 class HomeScreen extends StatefulWidget {

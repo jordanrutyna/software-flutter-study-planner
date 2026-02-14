@@ -1,9 +1,31 @@
-# StudyMateAI
+# StudyMate
 
-Welcome to StudyMateAI, an AI-powered study assistant and school scheduler designed to enhance the academic experience for students. StudyMateAI leverages advanced AI technology to provide personalized study recommendations, optimize your study schedule, and assist with academic resource management.
+Welcome to StudyMate, an AI-powered study assistant and school scheduler designed to enhance the academic experience for students. StudyMateAI leverages advanced AI technology to provide personalized study recommendations, optimize your study schedule, and assist with academic resource management.
+
+## Tech Stack
+- Flutter
+- Dart
+- State handled with Flutter StatefulWidgets (setState)
+- Data persisted using SQLite (sqflite) and SharedPreferences
+
+## Screenshots
+| Welcome Screen | Login Screen |
+|-------------|-------------|
+| ![Welcome Screen](captures/welcome.png) | ![Login Screen](captures/login.png) |
+
+| Home Screen | Chat Screen |
+|-------------|-------------|
+| ![Home Screen](captures/home.png) | ![Chat Screen](captures/chat.png) |
+
+| Courses Screen | Course Screen |
+|-------------|-------------|
+| ![Courses Screen](captures/courses.png) | ![Course Screen](captures/course.png) |
+
+| Schedule Screen | Add Task |
+|-------------|-------------|
+| ![Schedule Screen](captures/schedule.png) | ![Add Task](captures/schedule-add.png) |
 
 ## Features
-
 - **AI-Powered Study Assistant**: Engage with our AI to get study tips, reminders, and motivational support tailored to your academic needs.
 - **Smart Scheduler**: Plan your study routine and manage deadlines using an AI algorithm that considers your class times, due dates, and personal preferences.
 - **Calendar Integration**: View and edit your class schedules, exams, study sessions, and assignments in an intuitive calendar.
@@ -18,14 +40,15 @@ To run StudyMateAI on your device, you'll need to have Flutter installed and set
 
 1. Clone the repository:
    ```
-   git clone https://github.com/jrutyna2/StudyMateAI.git
+   git clone https://github.com/jordanrutyna/software-flutter-study-planner.git
    ```
 2. Navigate to the cloned repo:
    ```
-   cd StudyMateAI
+   cd software-flutter-study-planner
    ```
 3. Run the app on your connected device or emulator:
    ```
+   flutter pub get
    flutter run
    ```
 
